@@ -308,6 +308,7 @@ header {
   overflow: hidden;
   overflow-x: auto;
   width: calc(100% - 240px);
+  z-index: 1;
 }
 
 #all {
@@ -365,10 +366,12 @@ header {
 
 .card-dets {
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
   color: rgb(96, 96, 96);
+  position: relative;
 }
 
 .channel {
@@ -379,6 +382,10 @@ header {
   width: 40px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.card-text {
+  padding-right: 24px;
 }
 
 .card-dets h2 {
@@ -401,6 +408,9 @@ header {
 .card-btn {
   width: 40px;
   height: 40px;
+  position: absolute;
+  right: -15px;
+  top: -10px;
 }
 
 .ml-72 {
